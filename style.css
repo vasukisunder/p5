@@ -121,7 +121,6 @@ a {
   opacity: 0;
 }
 
-/* Show corresponding video on hover */
 .clock:hover ~ .content .clock-video,
 .portrait:hover ~ .content .portrait-video,
 .illusion:hover ~ .content .illusion-video,
@@ -132,7 +131,6 @@ a {
   opacity: 1;
 }
 
-/* Hide default when showing preview */
 .project-links a:hover ~ .content .default {
   opacity: 0;
 }
@@ -251,7 +249,6 @@ h1 a:hover {
     }
 }
 
-/* Base styles for all sketch holders */
 
 .project-page{
   background: #000404;
@@ -414,8 +411,7 @@ h2 {
     }
 
     .sketch-container {
-        display: none !important;  /* Hide the embed completely */
-    }
+        display: none !important; 
 
     .project-description {
         width: 100% !important;
@@ -437,17 +433,17 @@ h2 {
     }
 
     .nav-links a.home {
-        display: inline-block !important;  /* Show only the home link */
+        display: inline-block !important; 
     }
 
     .top-nav {
-        justify-content: flex-start !important;  /* Left align the nav container */
-        padding-left: 20px !important;          /* Add some left padding */
+        justify-content: flex-start !important;  
+        padding-left: 20px !important;          
     }
 
     .nav-links {
         width: 100% !important;
-        justify-content: flex-start !important; /* Left align the links container */
+        justify-content: flex-start !important; 
     }
 
     .nav-links a {
@@ -456,7 +452,7 @@ h2 {
 
     .nav-links a.home {
         display: inline-block !important;
-        margin-left: 0 !important;    /* Remove any left margin */
+        margin-left: 0 !important;   
     }
 
     /* Left align home page content */
@@ -472,7 +468,6 @@ h2 {
 
   
 
-    /* Ensure links are left-aligned */
     .project-links {
         text-align: left !important;
         align-items: flex-start !important;
