@@ -309,3 +309,172 @@ h1 a:hover {
 h2 {
   font-size: 16px;
 }
+
+/* Mobile styles */
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Home page */
+    .left-half {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
+
+    .right-half {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+    }
+
+    .right-half video, 
+    .right-half img {
+        position: relative !important;
+        width: 90% !important;
+        margin: 20px auto !important;
+        display: block !important;
+        transform: none !important;
+        left: 0 !important;
+        
+    }
+
+    /* Project pages */
+    .project-content {
+        flex-direction: column !important;
+        padding: 20px !important;
+    }
+
+    .sketch-container,
+    .project-description {
+        width: 100% !important;
+    }
+
+    .sketch-container iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Stack layout */
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-half {
+        position: static !important;
+        width: 320px !important;
+        min-width: 320px !important;
+        height: auto !important;
+        padding: 20px !important;
+        margin: 0 auto !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    .right-half {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px !important;
+        margin-top: 20px !important;  /* Add space between sections */
+    }
+
+    /* Specifically target the default gif */
+    .right-half .default {
+        position: static !important;
+        width: 320px !important;
+        height: auto !important;
+        opacity: 1 !important;        /* Force visibility */
+        display: block !important;    /* Ensure it's displayed */
+        margin: 0 auto !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    /* Hide video previews */
+    .right-half video.preview {
+        display: none !important;
+    }
+
+    /* Project page specific styles */
+    .project-content {
+        flex-direction: column !important;
+        margin-top: 20px !important;
+        height: auto !important;
+        margin-left: 0px !important;
+    }
+
+    .sketch-container {
+        display: none !important;  /* Hide the embed completely */
+    }
+
+    .project-description {
+        width: 100% !important;
+        min-width: 320px !important;
+        margin: 0 auto !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+        padding-left: 0px !important;
+       
+    }
+
+    .project-description h2 {
+        text-align: left !important;
+    }
+
+    /* Hide all nav links except home */
+    .nav-links a {
+        display: none !important;
+    }
+
+    .nav-links a.home {
+        display: inline-block !important;  /* Show only the home link */
+    }
+
+    .top-nav {
+        justify-content: flex-start !important;  /* Left align the nav container */
+        padding-left: 20px !important;          /* Add some left padding */
+    }
+
+    .nav-links {
+        width: 100% !important;
+        justify-content: flex-start !important; /* Left align the links container */
+    }
+
+    .nav-links a {
+        display: none !important;
+    }
+
+    .nav-links a.home {
+        display: inline-block !important;
+        margin-left: 0 !important;    /* Remove any left margin */
+    }
+
+    /* Left align home page content */
+    .left-half {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    .description {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+  
+
+    /* Ensure links are left-aligned */
+    .project-links {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+}
