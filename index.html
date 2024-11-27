@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>vasuki sunder</title>
+</head>
+<body>
+  <div class="left-half">
+    <h1><a href="index.html">vasuki sunder</a></h1>
+    <div class="description">
+      <p>hello, welcome to my p5.js portfolio! <br><br> made with <span class="red">love</span> ♥ for critical computation lab ꩜ in the mfa design and technology program<br>@ <span class="red">parsons school of design</span> ✦ <br><br><br></p>
+
+      <p class="learn-more">click on a project to learn more ↓<br></p>
+
+    </div>
+    <nav class="project-links">
+      <a href="clock.html" class="clock">experimental clock</a>
+      <a href="portrait.html" class="portrait">data portrait</a>
+      <a href="illusion.html" class="illusion">optical illusion</a>
+      <a href="face.html" class="face">face generator</a>
+      <a href="corpse.html" class="corpse">exquisite corpse</a>
+      <a href="game.html" class="game">autobiographical game</a>
+      <a href="lost.html" class="lost">lost and found</a>
+      <a href="about.html">about</a>
+    </nav>
+  </div>
+
+  <div class="right-half">
+    <img class="default" src="assets/bg.gif">
+    <video class="preview clock-video" autoplay muted loop>
+      <source src="assets/clock.mov">
+    </video>
+    <video class="preview portrait-video" autoplay muted loop>
+      <source src="assets/portrait.mov">
+    </video>
+    <video class="preview illusion-video" autoplay muted loop>
+      <source src="assets/illusion.mov">
+    </video>
+    <video class="preview face-video" autoplay muted loop>
+      <source src="assets/face.mov">
+    </video>
+    <video class="preview corpse-video" autoplay muted loop>
+      <source src="assets/corpse.mov">
+    </video>
+    <video class="preview game-video" autoplay muted loop>
+      <source src="assets/game.mov">
+    </video>
+    <video class="preview lost-video" autoplay muted loop>
+      <source src="assets/lost.mov">
+    </video>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.project-links a');
+    const defaultImg = document.querySelector('.default');
+    const videos = document.querySelectorAll('.preview');
+
+    links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            // If it's the about link, show the default gif
+            if (link.getAttribute('href') === 'about.html') {
+                defaultImg.style.opacity = '1';
+                videos.forEach(video => {
+                    video.style.opacity = '0';
+                });
+                return;
+            }
+            
+            // For all other links, show their corresponding video
+            defaultImg.style.opacity = '0';
+            const videoClass = link.className + '-video';
+            videos.forEach(video => {
+                if (video.classList.contains(videoClass)) {
+                    video.style.opacity = '1';
+                }
+            });
+        });
+
+        link.addEventListener('mouseleave', () => {
+            defaultImg.style.opacity = '1';
+            videos.forEach(video => {
+                video.style.opacity = '0';
+            });
+        });
+    });
+  </script>
+</body>
+</html>

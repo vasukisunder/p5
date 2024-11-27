@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Monument';
+  src: url('assets/monument.otf') format('opentype');
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Monument', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.1;
+  background: #000404;
+  font-size: 13px;
+}
+
+.left-half {
+  width: 20%;
+  padding: 32px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #e4e4e4;
+  margin-left: 300px;
+  margin-top: 300px;
+  letter-spacing: -0.01px;
+
+  
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: normal;
+  
+}
+
+.description {
+  max-width: 480px;
+}
+
+.description .red {
+  color:#FFB6C1;
+}
+
+.learn-more {
+  color: #888;
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-links a {
+
+  border-bottom: 1px dotted #fff;
+ 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+
+ a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #B6FBF4,
+    #FFB6C1,
+    #B6FBF4,
+    #FFDAB9,
+    #E6E6FA
+  );
+  background-size: 200% auto;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+ a:hover {
+  color: #000;
+  border-bottom-color: transparent;
+}
+
+ a:hover::before {
+  transform: scaleX(1);
+  animation: gradient 3s linear infinite;
+}
+
+.right-half {
+  width: 50%;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 32px;
+}
+
+.right-half video, .right-half img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.preview {
+  opacity: 0;
+}
+
+/* Show corresponding video on hover */
+.clock:hover ~ .content .clock-video,
+.portrait:hover ~ .content .portrait-video,
+.illusion:hover ~ .content .illusion-video,
+.face:hover ~ .content .face-video,
+.corpse:hover ~ .content .corpse-video,
+.game:hover ~ .content .game-video,
+.lost:hover ~ .content .lost-video {
+  opacity: 1;
+}
+
+/* Hide default when showing preview */
+.project-links a:hover ~ .content .default {
+  opacity: 0;
+}
+
+.default-gif {
+  opacity: 1;
+}
+
+.right-half img.inverted {
+  filter: invert(100%);
+}
+
+
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    font-size: 12px;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 0.5px dotted #fff;
+    width: fit-content;
+    position: relative;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        #B6FBF4,
+        #FFB6C1,
+        #B6FBF4,
+        #FFDAB9,
+        #E6E6FA
+    );
+    background-size: 200% auto;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.nav-links a:hover {
+    color: #000;
+    border-bottom-color: transparent;
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(1);
+    animation: gradient 3s linear infinite;
+}
+
+.project-content {
+    display: flex;
+    margin-top: 80px; /* Space for nav */
+    height: calc(100vh - 80px);
+}
+
+.sketch-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sketch-container iframe {
+    border: none;
+}
+
+.project-description {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+h1 a:hover {
+    background-position: -200% center;
+    animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes gradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Base styles for all sketch holders */
+
+.project-page{
+  background: #000404;
+}
+
+
+
+.project-content {
+  margin-left: 10%;
+  color: #000404;
+  width: 100%;
+
+  
+}
+.sketch-holder {
+    margin-top: 50vh;
+}
+
+.sketch-holder iframe {
+    border: none;
+   
+    display: block;
+}
+
+
+.right-half-project {
+    position: fixed;
+    left: 90%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.sketch-holder iframe {
+    border: none;
+    width: 600px;
+    height: 600px;
+}
+
+.project-description {
+    color: #e4e4e4;
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.01px;
+}
+
+h2 {
+  font-size: 16px;
+}
