@@ -14,6 +14,8 @@
 
       <p class="learn-more">click on a project to learn more ↓<br></p>
 
+     
+
     </div>
     <nav class="project-links">
       <a href="clock.html" class="clock">experimental clock</a>
@@ -23,7 +25,14 @@
       <a href="corpse.html" class="corpse">exquisite corpse</a>
       <a href="game.html" class="game">autobiographical game</a>
       <a href="lost.html" class="lost">lost and found</a>
-      <a href="about.html">about</a>
+      <div class="dropdown">
+        <a href="#" class="nav-link">other stuff</a>
+        <div class="dropdown-content">
+            <a href="/about.html">about</a>
+            <a href="/manifesto.html" target="_blank">manifesto</a>
+            <a href="https://memorybox-dt.web.app/" target="_blank">memory box</a>
+        </div>
+    </div>
     </nav>
   </div>
 
@@ -53,14 +62,16 @@
   </div>
 
   <script>
-    const links = document.querySelectorAll('.project-links a');
+    const links = document.querySelectorAll('.project-links a, .dropdown-content a');
     const defaultImg = document.querySelector('.default');
     const videos = document.querySelectorAll('.preview');
 
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
-            // If it's the about link, show the default gif
-            if (link.getAttribute('href') === 'about.html') {
+            // Show default gif for about, manifesto, and memory box links
+            if (link.getAttribute('href') === '/about' || 
+                link.getAttribute('href') === '/manifesto' || 
+                link.getAttribute('href') === 'https://memorybox-dt.web.app/') {
                 defaultImg.style.opacity = '1';
                 videos.forEach(video => {
                     video.style.opacity = '0';
