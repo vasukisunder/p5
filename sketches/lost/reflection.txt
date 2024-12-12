@@ -1,0 +1,25 @@
+Vasuki Sunder
+
+Partner: Ryan Liu
+
+Ryan's description: 
+This is a small cactus I used to have. It was very unique, and I threw it away when I moved to a new place. This cactus was different from other small cactus plants; it was tall and slim, with a height-to-width ratio of about 6:1. The top quarter of it leaned slightly to the right, and in this top quarter, it grew four to five small leaves evenly distributed on both sides, let’s say two on the left and three on the right. These small leaves were tiny, about the size of a clover leaf, but they were oval-shaped. It was planted in a small pot at the bottom, with a diameter slightly larger than the cactus itself. The pot was brown and short, with a height-to-cactus ratio of about 3:1.
+
+
+My reflections:
+
+Since this was a pretty simple description, I chose to interpret it with more detail -- I imagined that Ryan must have associated the cactus with his old home before moving, so I placed it in a rather idyllic and nostalgic scene, in front of a sun shining over rolling meadows. 
+
+I enjoyed experimenting with many new techniques to create various aspects of the image. I originally used a simple rectangle for the plant pot, but using a series of ellipses in a gradient color scheme made the pot more similarly resemble a cylindric ceramic piece.
+
+I also wanted the cactus to resemble more of a cylindric shape, so I used three shades of green to depict the shadows and highlights in the plant, so that it would appear more 3D. 
+
+I used asterisks (*) to depict the cactus spikes, which added a fun level of minute detail that would have been quite hard to reproduce manually, and I think it helps to make the illustration appear quite detailed. 
+
+On that note, small details really played a big role in bringing the illustration to life. Instead of a single circle for the sun, I used three circles laid over each other, each in a slightly different size and in different shades of orange and yellow. I kept the foremost circle solid, and applied a blurring filter to the ones behind, to emulate rays of sunshine.
+
+Another small detail was a tiny ellipse that I added to the inside of the pot, to depict soil covering the bottom of the cactus.
+
+However, since this is my first real p5 sketch, there were many gaps in my knowledge and I had to use some make-shift "fixes". For example, I didn't realize that the BLUR filter would always apply to the entire image, and could not be constrained within a push() and pop(). I also had to slightly shrink down the cactus and used scale() to do so, rather than recalculating the entire sketch. 
+
+Interestingly, as I added more details, I found myself resonating with this cactus a lot more, and empathizing with its loss in Ryan's life. 

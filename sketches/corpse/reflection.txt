@@ -1,0 +1,37 @@
+My partners were Aisha and Rudy -- I drew the constellation of Orion, Aisha drew a character called Moonflower, and Rudy drew the Corpse Bride. I thought it was interesting that we all drew somewhat dark, moody, and night-themed characters, and I wanted to reflect that in the colors of my sketch. 
+
+Orion’s description:
+
+Most people have probably seen Orion in the sky. He’s one of the brightest, largest, and most visible constellations, especially in the winter. Orion was a famous hunter in Greek mythology. One day Orion proclaimed that he would kill every beast on Earth. The Earth goddess Gaia didn’t like this, and ordered a Giant scorpion to kill him. Eventually, Zeus placed him amongst the stars, along with the scorpion that killed him (which is why we have the Scorpio zodiac sign). 
+
+Moonflower's description:
+
+Have you ever heard of a sunflower? The
+moonflower is the sunflower’s twin. Born only
+seconds after the sunflower, the moonflower
+follows the same tendencies, but toward the
+moon. If you’re lucky, on a cool, fall night, you
+might see the moonflower sitting in the
+middle of an opening in the trees, in the
+perfect place to watch the moon.
+
+Corpse Bride reflection -- I did not receive one, but from my memory of the movie, I know the corpse bride was a woman who was murdered on her wedding day, and then accidentally wed by a man named Victor.
+
+
+Collective background story: 
+
+I thought it would be interesting to ask ChatGPT to generate a name that blended these three characters, and it came up with this:
+
+*Selene Thornion*
+-- "Selene" is inspired by the Greek moon goddess, linking to the moonflower's nocturnal beauty and the ethereal presence of the Corpse Bride.
+-- "Thornion" combines "thorn," symbolizing both beauty and death, with a subtle nod to Orion, the hunter and constellation, giving the name a sharp, formidable edge.
+-- This name captures a haunting, celestial character with a blend of grace, strength, and dark elegance.
+
+I really liked this blend of characteristics from all three characters. Selene is a reflection of the duality between life and death -- she appreciates fleeting beauty and is mysterious and elusive, like the moonflower who can only be seen at night. She's melancholic and gothic, connected to the dead and the underworld, like the Corpse Bride. But beneath it all, she is strong and protective, like Orion the hunter. 
+
+
+Reflection:
+
+I was sick for most of this week, so I have been a bit behind on all my assignments and didn't get that much time to work on this -- but I really enjoyed the group aspect of the project and getting to see other people's creative back stories. I especially enjoyed Aisha's story about the moonflower. I initially was trying to replicate our drawings in a very literal way, meaning the Orion section was just lines and stars -- but in the end I decided to remove the lines and just let the stars be at the correct locations, and I added a background "body" shape so that it looked more like a figure. I also added a neckline that was somewhat similar to the corpse bride's wedding dress, to add to the effect. 
+
+I also played around a lot with shapes in this sketch -- for example, it was easier to layer different quadrilaterals to get the exact unique shapes I wanted, rather than try to use translate and rotate (which are definitely my least fav functions). 

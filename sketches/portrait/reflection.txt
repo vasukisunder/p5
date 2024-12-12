@@ -1,0 +1,16 @@
+The habit I wanted to track this week was my water intake. I struggle with drinking enough water and I hoped that tracking it would inspire me to drink more because I'm really afraid of getting a kidney stone... 
+
+The idea I had was to use millis() to represent time passing in the week, and fill the canvas proportionately with "water", adding on every time I actually finished a water bottle at some point in the week. In order to create an array that would be easy to parse through, I worked out the math so that each entry corresponded to an hour in the 168-hour week -- So Sunday at 1am would be represented by '1', Monday at 1am would be represented by '25', with Saturday at 11pm being '167' and so on. For simplicity, I rounded my time values to the nearest hour.
+
+(See my attached picture 'data.jpg' for more on the math breakdown)
+
+Originally I thought one second should represent one hour, but quickly realized that would be way too slow and I made one second represent 8 hours. I had to do some research to figure out how to make the "water level" look like it was organically "growing" as I "drank" more water through the week.
+
+The math part of this and syncing the elapsed second hours with the real week hours and displaying both values in text actually took a lot longer than I thought, and once I finished I realized that a plain screen with a water level rising appeared a lot more boring than I thought it would be, so I wanted to brainstorm ways to make it more fun and visually interesting. I came up with adding a "wave" feature to the water level, and then making it interactive by allowing the user to control the shape of the wave in various ways with their mouse location. Then, I had the idea to replace the cursor with a little surfer guy illustration because I felt like the combination of the wave rising with my water intake, and changing shape with mouse location, together made it look like surfing a wave. I also made the water change colors to add another visual interest, and I had the idea to reuse the sun I made in the Lost and Found project.
+
+One of my overall favorite parts of this was adjusting the RGB values of the water so that it stayed within the muted blue watery tones that I really like, as well as making the sun and sunset gradient background. I love working with color and creating a feeling in that way.
+
+
+Reflection:
+I did realize I was drinking more water because I was tracking it, which was interesting -- although I don't know if its very good in terms of getting accurate data. I suppose the true accuracy was what was lost through tracking it, but I gained a better hydration level, which was nice. I wanted the data visualization to sync with a real representation of time, so that I could see if the "water level" grew faster or slower at different times of day, or different times of the week. I think this part of the project was somewhat lost because I happened to just drink water at a pretty regular rate this week, so although there is some variation in the wave growing, the growth rate overall looks pretty even. I think that if I were to track this over a longer period of time, the visualization would be more interesting because there are definitely weeks in the year where my water level gets very low or very high.
+

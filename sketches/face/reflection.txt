@@ -1,0 +1,15 @@
+My design process:
+
+For this project, I had the idea to try and create an illustration of my dog back home, Hazel. Since moving to the city, she's one of the things I miss the most, and I really miss her silly personality. This project seemed like a fun way to bring that silliness to life, with all the wacky variations you can come up with. 
+
+I especially wanted to make the ears flap around wildly, because it reminds me of how she looks when she excitedly runs around, or sticks her head out of the window when driving. 
+
+One thing I wanted to focus on was allowing the silliness of generating different faces with mouse movement, but still have them resembling the original idea. I tried to accomplish this goal by setting parameters around everything the viewer could control. For example, clicking allows you to change the color of the dogs face and ears, but I tried to limit the range of RGB values to ones that mostly stay in the "brown" shade range, to be somewhat close to real dog colors. Occasionally you do get some non-brown shades, but I'm pretty happy with how realistic it looks overall. 
+
+I also minimized the maximum effect mouse movement could have on the features, by dividing the value by various numbers so that a user could have fun with it, but not totally destroy the intended shape.
+
+Reflection on form:
+
+I think one thing I learned with this project, was that I personally enjoy having maximum control over little details in the piece, that make it all come together. Allowing the user to control things is cool -- and I'm not against it (after all, interactivity is what makes these things fun) -- but I don't LOVE having to incorporate the *randomness* aspect of it. 
+If I had more experience with p5, a fun idea I would like to explore is how a user could generate different dog faces, but all the faces actually looked realistic and resembled different faces. This idea would keep the "generator" part of this project, but would be less about randomness. The user could "randomly" generate combinations of colors for the face and ears, for example, but they would be randomly selected from predefined values I've set. 
+

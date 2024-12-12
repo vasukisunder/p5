@@ -217,8 +217,12 @@ a {
 
 .project-content {
     display: flex;
-    margin-top: 80px; /* Space for nav */
-    height: calc(100vh - 80px);
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1em;
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 100%;
 }
 
 .sketch-container {
@@ -228,18 +232,20 @@ a {
     align-items: center;
 }
 
-.sketch-container iframe {
-    border: none;
+#sketch-holder {
+    width: 100%;  /* Take full width of container */
+    height: auto;  /* Adjust height automatically */
+    min-width: 400px;  /* Minimum width */
 }
 
 .project-description {
     flex: 1;
-    padding: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.3;
-    color: #f3f2f1;
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.project-description h2 {
+    color: #BAC4B8;  /* Same color as the paragraph text */
 }
 
 h1 a {
