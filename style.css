@@ -215,6 +215,12 @@ a {
     animation: gradient 3s linear infinite;
 }
 
+main iframe {
+    width: 600px;  /* Or whatever size your sketch is */
+    height: 650px;  /* Adjust based on your sketch's dimensions */
+    border: none;
+}
+
 .project-content {
     display: flex;
     flex-direction: row;
