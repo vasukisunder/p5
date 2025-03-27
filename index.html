@@ -25,14 +25,7 @@
       <a href="corpse.html" class="corpse">exquisite corpse</a>
       <a href="game.html" class="game">autobiographical game</a>
       <a href="lost.html" class="lost">lost and found</a>
-      <div class="dropdown">
-        <a href="#" class="nav-link">other stuff</a>
-        <div class="dropdown-content">
-            <a href="about.html">about</a>
-            <a href="manifesto.html" target="_blank">manifesto</a>
-            <a href="https://memorybox-dt.web.app/" target="_blank">memory box</a>
-        </div>
-    </div>
+      
     </nav>
   </div>
 
@@ -68,9 +61,8 @@
 
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
-            // Show default gif for about, manifesto, and memory box links
-            if (link.getAttribute('href') === '/about' || 
-                link.getAttribute('href') === '/manifesto' || 
+            // Show default gif for manifesto and memory box links
+            if (link.getAttribute('href') === '/manifesto' || 
                 link.getAttribute('href') === 'https://memorybox-dt.web.app/') {
                 defaultImg.style.opacity = '1';
                 videos.forEach(video => {
